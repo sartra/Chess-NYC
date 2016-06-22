@@ -1,0 +1,199 @@
+@import "vendors/bootstrap/bootstrap.less";
+@import "vendors/font-awesome/font-awesome.less";
+
+@dark: #333333;
+@light: #f4f4f4;
+@primary: #762FE4;
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  color:@dark;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color:white;
+}
+
+// TYPOGRAPHY
+
+h1, h2, h3, h4, h5, h6{
+  margin: 10 10 35px;
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.photos{
+  margin:0;
+  padding:0;
+}
+
+.photos li{
+  list-style: none;
+  float:left;
+  margin:5px;
+  width:23%;
+}
+
+.photos img{
+  width:100%;
+}
+
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  text-align: center;
+  color:@light;
+  background: url(../img/coaches2.png) no-repeat bottom center scroll;
+  background-color:@dark;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  margin-top:50px;
+  background-blend-mode: soft-light;
+}
+
+.intro-body{
+  display:table-cell; 
+  vertical-align:middle;
+}
+
+.brand-heading{
+  font-size:40px;
+}
+
+.intro-text{
+  font-size:18px;
+}
+
+.logo-main{
+  width:100%;
+  vertical-align:middle;
+  horizontal-align:middle;
+  opacity: .6;
+}
+
+.logo-half{
+  width:50%;
+  margin: 0 auto;
+
+}
+
+.my-btns{
+  margin-bottom:1em;
+}
+
+a{
+  color:@primary;
+}
+
+a:hover, a:focus{
+  text-decoration: none;
+  color: darken(@primary, 20%)
+}
+
+
+
+.navbar-custom .nav li a:hover{
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li.active {
+    outline: none;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: @light;
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    outline: none;
+}
+
+
+.brand-heading{
+  font-size:40px;
+}
+
+.intro-text{
+  font-size:18px;
+}
+@media(min-width:767px){
+    .intro{
+      height:100%;
+      padding:0;
+    }
+    .brand-heading {
+      font-size:100px !important;
+      margin-bottom: 120px;
+    }
+    .intro-text{
+      font-size:25px;
+    }
+    .who-section{
+      padding:100px 0;
+    }
+}
+
+// content section
+
+.content-section{
+  padding-top: 50px !important;
+  margin-bottom:100px;
+}
+
+.coaches-section{
+  width:100%;
+  padding:160px 0;
+  color:white;
+  text-align: center;
+  background: url(../img/tournament.jpg) no-repeat bottom center scroll;
+  background-color:@dark;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  margin-bottom:0px;
+  background-blend-mode: soft-light;
+}
+
+
+
+// Contact Section
+
+#contact{
+  background:@dark;
+  color:@light;
+  padding-bottom:80px;
+  margin-top:0;
+  margin-bottom:100px;
+}
+
+// FOOTER
+
+footer{
+  margin-top:10px;
+  padding-top:30px;
+  height:80px;
+  text-align:center;
+}
