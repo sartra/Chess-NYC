@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+
+  <title>Chess NYC Home</title>
+
+  <!-- Bootstrap core CSS -->
+<!--     <link href="css/bootstrap.css" rel="stylesheet">
+-->
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+
+<!-- Custom styles for this template -->
+<link href="css/main.css" rel="stylesheet">
+
+<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Bootstrap v4 CSS - NEED for cards -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+<link href="css/main.css" rel="stylesheet">
+
+<link rel='shortcut icon' href='img/favicon/favicon-knight.ico' type='image/x-icon'/ >
+
+
+<style>
+  body{
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+  }
+
+    .navbar {
+        position: relative;
+        padding: 0;
+        width:100%;
+    }
+
+    @media (min-width: 768px)
+    .navbar-left {
+    float: left !important;
+    float: left;
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    @media (min-width: 768px)
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        border-radius: 0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    #map-section{
+      margin-top:80px;
+    }
+
+    .pawn-icon{
+      height:4em;
+      width:4em;
+    }
+
+
+
+/*  MAP  */
+html { height: 100% }
+      body { height: 100%; background-color:#CCC }
+      #map-outer {height: auto; padding: 20px; border: 2px solid #CCC; margin-bottom: 20px; background-color:#FFF }
+    #map-container { height: auto }
+    @media all and (max-width: 991px) {
+    #map-outer  { height: auto }
+    }
+
+
+
+</style>
+
+</head>
+
+<body >
+
+<!--     <nav class="navbar navbar-custom navbar-fixed-top">
+-->
+<nav class="navbar navbar-inverse navbar-custom navbar-fixed-top navbar-left">
+  <div class="container"> <!-- added navbar-custom -->
+    <div class="navbar-header"> 
+    <a class="navbar-brand" href="index.html">
+        CHESS NYC
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+
+<div id="navbar" class="collapse navbar-collapse navbar-main-collapse"> <!-- added navbar-right & navbar-main-collapse -->
+
+    <ul class="nav navbar-nav ">
+
+    <li class="page-scroll">
+        <a href="programs3.html">Programs</a>
+    </li>
+    <li class="page-scroll">
+        <a href="#camps">Camps</a>
+    </li>
+    <li class="page-scroll">
+        <a href="#meets">Meets</a>
+    </li>
+    <li class="page-scroll">
+        <a href="news3.html">News</a>
+    </li>
+    <li class="page-scroll">
+        <a href="#registration">Registration</a>
+    </li>
+    <li class="page-scroll active">
+        <a href="contact.html">Contact Us</a>
+    </li>
+</ul>
+
+</div><!--/.nav-collapse -->
+</div>
+</nav>
+
+
+
+
+
+
+
+
+  <div class="container" id="map-section">
+  <div class="row">
+      <div id="map-outer" class="col-md-12">
+          <div id="address" class="col-md-3">
+            <h2>Chess NYC Main Office</h2>
+            <address>
+            <strong>Village Chess @ Zinc</strong><br>
+                82 W 3rd Street<br>
+                New York, NY<br>
+                10012<br>
+                <abbr>P:</abbr> +888-321-CHESS! 
+           </address>
+           </div>
+        <div id="map-container" class="col-md-9">
+          <iframe src="https://www.google.com/maps/d/embed?mid=1drzlgbH3UG4epH7RQBwL49bGE3A" width="100%" height="480"></iframe>
+          
+        </div>
+        <div id="pawn-container" class="col-md-9 col-md-offset-3">
+        <a href="https://www.google.com/maps/d/u/1/viewer?authuser=1&mid=1drzlgbH3UG4epH7RQBwL49bGE3A" target="new">
+        <img src="img/pawn.svg" class="pawn-icon">
+        <h4 style="display:inline; padding:0;">View All Locations on Google</h2>
+        </div></a>
+      </div><!-- /map-outer -->
+  </div> <!-- /row -->
+
+  <div class="row">
+  <h4>Send us a message</h2>
+  <form role="form" class="form-horizontal" name="commentform" method="post" action="index.php">
+    <div class="form-group">
+        <div class="col-md-4">
+            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name"/>
+        </div>
+        <div class="col-md-4">
+            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name"/>
+        </div>
+        <div class="col-md-4 input-group">
+        <span class="input-group-addon">@</span>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-12">
+            <textarea rows="6" class="form-control" id="comments" name="comments" placeholder="Your question or comment here"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-6">
+            <button type="submit" value="Submit" class="btn btn-purple pull-right btn-lg">  Send  </button>
+        </div>
+    </div>
+</form>
+</div><!-- /row -->
+</div><!-- /container -->
+   
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script>  
+
+    
+    </script>
+
+
+<!-- <footer>
+  <p>Chess NYC &copy; 2016, All Rights Reserved</p>
+</footer> -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> <!-- scroll ease -->
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+  </body>
+  </html>

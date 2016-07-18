@@ -1574,6 +1574,7 @@ pre code {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  
 }
 @media (min-width: 768px) {
   .container {
@@ -3273,6 +3274,69 @@ fieldset[disabled] .btn-info.focus {
   color: #5bc0de;
   background-color: #fff;
 }
+ 
+/* CHESS NYC BUTTON*/
+.btn-purple {
+  color: #fff;
+  background-color: #B38CFC;
+  border-color: #8F4BEE;
+}
+.btn-purple:focus,
+.btn-purple.focus {
+  color: #fff;
+  background-color: #924BF2;
+  border-color: #733BC0;
+}
+.btn-purple:hover {
+  color: #fff;
+  background-color: #924BF2;
+  border-color: #733BC0;
+}
+.btn-purple:active,
+.btn-purple.active,
+.open > .dropdown-toggle.btn-purple {
+  color: #fff;
+  background-color: #924BF2;
+  border-color: #8F4BEE;
+}
+.btn-purple:active:hover,
+.btn-purple.active:hover,
+.open > .dropdown-toggle.btn-purple:hover,
+.btn-purple:active:focus,
+.btn-purple.active:focus,
+.open > .dropdown-toggle.btn-purple:focus,
+.btn-purple:active.focus,
+.btn-purple.active.focus,
+.open > .dropdown-toggle.btn-purple.focus {
+  color: #fff;
+  background-color: #924BF2;
+  border-color: #733BC0;
+}
+.btn-purple:active,
+.btn-purple.active,
+.open > .dropdown-toggle.btn-purple {
+  background-image: none;
+}
+.btn-purple.disabled:hover,
+.btn-purple[disabled]:hover,
+fieldset[disabled] .btn-purple:hover,
+.btn-purple.disabled:focus,
+.btn-purple[disabled]:focus,
+fieldset[disabled] .btn-purple:focus,
+.btn-purple.disabled.focus,
+.btn-purple[disabled].focus,
+fieldset[disabled] .btn-purple.focus {
+  background-color: #924BF2;
+  border-color: #733BC0;
+}
+.btn-purple .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+
+/*END PURPLE BUTTON*/
+
+
 .btn-warning {
   color: #fff;
   background-color: #f0ad4e;
@@ -5895,7 +5959,7 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1040;
+  z-index: 0;
   background-color: #000;
 }
 .modal-backdrop.fade {
@@ -8607,7 +8671,7 @@ h6 {
   margin-bottom: 1em;
 }
 a {
-  color: #762FE4;
+  color: #6B1FD8;
 }
 a:hover,
 a:focus {
@@ -8663,6 +8727,7 @@ a:focus {
 .content-section {
   padding-top: 20px !important;
   margin-bottom: 100px;
+  margin-top:50px;
 }
 
 .programs-section {
@@ -8682,10 +8747,10 @@ a:focus {
 }
 .coaches-section {
   width: 100%;
-  padding: 160px 0;
+  padding: 180px 0;
   color: white;
   text-align: center;
-  background: url(../img/tournament.jpg) no-repeat bottom center scroll;
+  background: url(../img/coaches2.png) no-repeat bottom center scroll;
   background-color: #333333;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8695,19 +8760,114 @@ a:focus {
   background-blend-mode: soft-light;
 }
 
-section{
+/*section{
   margin-bottom:20px;
-}
-#contact {
-  background: #333333;
-  color: #f4f4f4;
-  padding-bottom: 80px;
-  margin-top: 0;
-  margin-bottom: 100px;
-}
+}*/
+
+
 footer {
-  margin-top: 10px;
-  padding-top: 30px;
+
   height: 80px;
   text-align: center;
 }
+
+
+/*   CALENDAR   */
+.agenda {  }
+
+/* Dates */
+.agenda .agenda-date { width: 170px; }
+.agenda .agenda-date .dayofmonth {
+  width: 40px;
+  font-size: 36px;
+  line-height: 36px;
+  float: left;
+  text-align: right;
+  margin-right: 10px; 
+}
+.agenda .agenda-date .shortdate {
+  font-size: 0.75em; 
+}
+
+
+/* Times */
+.agenda .agenda-time { width: 140px; } 
+
+
+/* Events */
+.agenda .agenda-events {  } 
+.agenda .agenda-events .agenda-event {  } 
+
+@media (max-width: 767px) {
+    
+}
+
+  body{
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+  }
+
+    .navbar {
+        position: relative;
+        padding: 0;
+        width:100%;
+    }
+
+    @media (min-width: 768px)
+    .navbar-left {
+    float: left !important;
+    float: left;
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    @media (min-width: 768px)
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        border-radius: 0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom {
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+
+.centered {
+    text-align: center;
+  }
+
+    .coaches-section{
+    margin-top:100px;
+  }
+
+  .card-200{
+    height:200px;
+    overflow: hidden;
+  }
+
+  .card-img-top{
+    width:100%;
+
+  }
+
+  .card-link{
+    font-weight: 500;
+  }
+
+
