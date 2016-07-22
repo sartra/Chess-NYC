@@ -1,141 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+
 <head>
   <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-    
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- Custom styles for this template -->
-<link href="css/main.css" rel="stylesheet">
-
-<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <title>Chess NYC Programs</title>
 
 
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
 
   <!-- Bootstrap v4 CSS - NEED for cards -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 
 
+  <!-- Custom styles for this template -->
+  <link href="css/main.css" rel="stylesheet">
 
-<style>
-  
-.bg {
-  background: url('img/nyc-skyline2.png') no-repeat center center;
-  position: fixed;
-  width: 100%;
-  height: 500px; /*same height as jumbotron */
-  top:0;
-  left:0;
-  z-index: -1;
-  background-color: #333333;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  margin-bottom: 0px;
-  background-blend-mode: soft-light;
+  <link rel='shortcut icon' href='img/favicon/favicon-knight.ico' type='image/x-icon'/ >
+
+
+
+  <style>
+
+      body{
+        font-family: Lato;
+        font-weight: 300;
+        font-size: 16px;
+        color: #555;
+        -webkit-font-smoothing: antialiased;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #main-news{
+        margin-top: 80px;
+    }
+
+    .navbar {
+        position: relative;
+        padding: 0;
+        width:100%;
+    }
+
+    @media (min-width: 768px)
+    .navbar-left {
+    float: left !important;
+    float: left;
 }
 
-.jumbotron {
-  height: 500px;
-  color: white;
-  text-shadow: #444 0 1px 1px;
-  background:transparent !important;
-  top:0;
-  padding:20px;
-  color:white !important;
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
 }
 
-#main {
-  margin-top:500px;
-  position:relative;
-  background:#fff;
+@media (min-width: 768px)
+.navbar-fixed-top, .navbar-fixed-bottom {
+    border-radius: 0;
 }
 
-body{
-  font-family: Lato;
-    font-weight: 300;
-    font-size: 16px;
-    color: #555;
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.jumbotron{
+              background-image: url(img/tournament.jpg);
+              color: white;
+              background-color: #333333;
+              background-blend-mode: soft-light;
+              text-align: center;
+              padding-top: 160px;
+              border-radius: 0;
+              background-size: cover;
+              background-attachment: fixed;
+              }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
 }
 
 </style>
 
-<link href="css/main.css" rel="stylesheet">
 
-<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-
-
-      <title>Programs</title>
 </head>
-<body id=“page-top” data-spy=“scroll” data-target=“.navbar-custom”>
+
+<body>
+
 
 <!--     <nav class="navbar navbar-custom navbar-fixed-top">
 -->
-<nav class="navbar navbar-inverse navbar-custom navbar-fixed-top">
-    <div class="navbar-header page-scroll"> <!-- added page-scroll class -->
+<nav class="navbar navbar-inverse navbar-custom navbar-fixed-top navbar-left">
+  <div class="container"> <!-- added navbar-custom -->
+    <div class="navbar-header">
+    <a class="navbar-brand" href="index.html">
+        CHESS NYC
+      </a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+</div>
+
+<div id="navbar" class="collapse navbar-collapse navbar-main-collapse"> <!-- added navbar-right & navbar-main-collapse -->
+
+    <ul class="nav navbar-nav">
       
- 
-     <div id="navbar" class="collapse navbar-collapse navbar-right navbar-main-collapse"> <!-- added navbar-right & navbar-main-collapse -->
-      <ul class="nav navbar-nav">
-        <ul class="nav navbar-nav">
-          <li class="hidden">
-              <a href="#page-top"></a>
-            </li>
-          <li class="page-scroll">
-            <a href="index.html">Home</a>
-            </li>
-          <li class="page-scroll active">
-            <a href="programs.html">Programs</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#camps">Camps</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#meets">Meets</a>
-          </li>
-          <li class="page-scroll">
-            <a href="news3.html">News</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#locations">Locations</a>
-          </li>
-          <li class="page-scroll">
-            <a href="#coaches">Contact Us</a>
-          </li>
-        </ul>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
+    <li class="page-scroll active">
+        <a href="programs.html">Programs</a>
+    </li>
+    <li class="page-scroll">
+        <a href="camps.html">Camps</a>
+    </li>
+    <li class="page-scroll">
+        <a href="meets.html">Meets</a>
+    </li>
+    <li class="page-scroll">
+        <a href="lessons.html">Lessons</a>
+    </li>
+    <li class="page-scroll">
+        <a href="news.html">News</a>
+    </li>
+    <li class="page-scroll">
+        <a href="#registration">Registration</a>
+    </li>
+    <li class="page-scroll">
+        <a href="contact.html">Contact Us</a>
+    </li>
+    
+</ul>
+
+</div><!--/.nav-collapse -->
+</div>
 </nav>
 
 
-  
-<div class="bg"></div>
-<div class="jumbotron affix">
-  <h1>Chess NYC Programs</h1>
-  <p class="lead">After School Programs Throughout NYC</p>
 
+<div class="jumbotron" >
+  <h1 class="display-3">Chess Programs</h1>
+  <p class="lead">After School & Curriculum Programs Throughout NYC</p>
+  <hr class="m-y-2">
+  <p>Join Our Mailing List!</p>
+
+  <form class="form-inline">
+    <div class="form-group">
+      <label class="sr-only" for="email">Your Email</label>
+      <div class="input-group">
+        <div class="input-group-addon">@</div>
+        <input type="text" class="form-control" id="email" placeholder="Email">
+    </div>
 </div>
+<button type="submit" class="btn btn-warning">Sign Up</button>
+</form>
+</div>  <!-- end Jumbotron -->
 
-<div class="container-fluid" id="main">
+
+
+
+<div class="container" id="main">
   <div class="row">
     <div class="col-md-12">
     <h2>Chess NYC 2016 Fall Programs</h2>
@@ -151,74 +195,10 @@ body{
 
   </div>
   </div>
-  <hr>
-
-
-<section>
-
-<div class="container-fluid">
-  <div class="row">
-      <div class="col-md-12 text-center" >
-        <h3>2015 National Championship Programs</h3>
-        <br>
-      </div>
-
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="20000">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                
-              </ol>
-
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="img/Programs-carousel/slide1.png" class="img-thumbnail">
-                </div>
-
-                <div class="item">
-                  <img src="img/Programs-carousel/slide2.png" class="img-thumbnail">          
-                </div>
-
-                 <div class="item">
-                  <img src="img/Programs-carousel/slide3.png" class="img-thumbnail">          
-                </div>
-
-                 <div class="item">
-                  <img src="img/Programs-carousel/slide4.png" class="img-thumbnail">          
-                </div>
-
-                 <div class="item">
-                  <img src="img/Programs-carousel/slide5.png" class="img-thumbnail">          
-                </div>
-
-              </div>
-
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+ 
 <section>
 <div class="row">
+  <div class="col-md-12 centered"><h2>2016 NATIONAL CHAMPS</h2></div>
   <div class="col-md-4 col-md-offset-2 text-center">
           <p>1st Grade National Champions</p>
           <p>2nd Grade  Top 15</p>
@@ -234,88 +214,173 @@ body{
 </div>
 </section>
 
+</br>
+
+
+  <div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <a href="programs.html"><button type="button" class="btn btn-purple btn-lg btn-block my-btns" style="font-size:16pt">Register Now</button></a>
+  </div>
+</div>
+
+ <hr>
 
 
 
 
 
-<div class="row">
-  <div class="col-md-10 col-md-offset-1">
-
-      <div class="panel panel-default">
-        <!-- Default panel contents -->
-        <div class="panel-heading text-center"><h3>Fall 2016 Programs</h3></div>
-
-        <!-- Table -->
-        <table class="table">
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-          <th>Friday</th>
-          <th>Saturday</th>
-          <th>Sunday</th>
 
 
-          <tr>
-            <td>Greenpoint After School Programs</td>
-            <td>Greenpoint After School Programs</td>
-            <td>Greenpoint After School Program</td>
-            <td>Greenpoint After School Program</td>
-            <td>Greenpoint After School Program</td>
-            <td>Private Chess Coaching</td>
-            <td>Head Start Juniors</td>
-          </tr>
-          <tr>
-            <td>PS 183: Chess NYC Club (Open Enrollment)</td>
-            <td>PS 151: Head Start Chess (YCS Students)</td>
-            <td>PS 267 Chess Club (PS 267 Students)</td>
-            <td>PS 183: Head Start ChessTM (All Schools)</td>
-            <td>PS 199 Evening Chess l (Open Enrollment)</td>
-            <td>G & T Quads (1000 - 2100 USCF)</td>
-            <td>Weekly Rated Meets</td>
-          </tr>
-          <tr>
-            <td>PS 267 Chess Club (PS 267 Students)</td>
-            <td>PS 151: Advancing in Chess (YCS Students)</td>
-            <td>Chess NYC @ Harlem Hebrew</td>
-            <td>PS 183: Team Development (All Schools)</td>
-            <td>Chess NYC @ NYFACS</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Village Chess Club (Open Enrollment)</td>
-            <td>PS 151: Chess Team (YCS Students)</td>
-            <td>Village Chess Club (Open Enrollment)</td>
-            <td>PS 183: Chess For Girls (All Schools)</td>
-            <td>Private Chess Coaching</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Village Chess Club (Open Enrollment)</td>
-            <td>PS 183: Coaching Club (Open Enrollment)</td>
-            <td>Private Chess Coaching</td>
-            <td>Resurrection Ascension</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Private Chess Coaching</td>
-            <td>Village Chess Club (Open Enrollment)</td>
-            <td></td>
-            <td>Private Chess Coaching</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
 
-        </table>
+<!-- 
+  CARDS -->
+
+
+  <div class="container" id="about">
+    <div class="card-deck-wrapper">
+      <div class="card-deck">
+
+
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">Mondays</h4>
+          </div>
+          <div class="card-200">
+            <img src="img/majur-620x420.jpg" class="card-img-top" alt="Card image cap">
+          </div>
+          <div class="card-block">
+
+            <p>Greenpoint After School Programs</p>
+            <p>PS 183: Chess NYC Club (Open Enrollment)</p>
+            <p>PS 267 Chess Club (PS 267 Students)</p>
+            <p>Village Chess Club (Open Enrollment)</p>
+            <p>Private Chess Coaching</p>
+
+           <!--  <ul>
+            <li>Greenpoint After School Programs</li>
+            <li>PS 183: Chess NYC Club (Open Enrollment)</li>
+            <li>PS 267 Chess Club (PS 267 Students)</li>
+            <li>Village Chess Club (Open Enrollment)</li>
+            <li>Private Chess Coaching
+            </ul> -->
+            <a href="#" class="card-link">REGISTER</a>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">Tuesdays</h4>
+            <h6 class="card-subtitle text-muted">Greenpoint</h6>
+          </div>
+          <div class="card-200">
+            <img img src="img/camp2.jpg" class="card-img-top" alt="Card image cap">
+          </div>
+          <div class="card-block">
+            <p>Greenpoint After School Programs</p>
+            <p>PS 151: Head Start Chess (YCS Students)</p>
+            <p>PS 151: Advancing in Chess (YCS Students)</p>
+            <p>PS 151: Chess Team (YCS Students)</p>
+            <p>PS 183: Coaching Club (Open Enrollment)</p>
+            <p>Village Chess Club (Open Enrollment)</p>
+            <p>Private Chess Coaching</p>
+            <a href="#" class="card-link">REGISTER</a>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">Wednesdays</h4>
+            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+          </div>
+          <div class="card-200">
+            <img img src="img/3-mommyPoppins.jpg" class="card-img-top"  alt="Card image cap">
+          </div>
+          <div class="card-block">
+
+            <p>Greenpoint After School Program</p>
+            <p>PS 267 Chess Club (PS 267 Student</p>
+            <p>Chess NYC @ Harlem Hebrew</p>
+            <p>Village Chess Club (Open Enrollme</p>
+            <p>Private Chess Coaching</p>
+        <a href="#" class="card-link">REGISTER</a>
+          </div>
+        </div>
 
       </div>
+    </div>
+  </div>
 
+
+<br>
+
+
+  <div class="container" id="about">
+    <div class="card-deck-wrapper">
+      <div class="card-deck">
+
+
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">Thursdays</h4>
+            <h6 class="card-subtitle text-muted">UES, Village, Chelsea</h6>
+          </div>
+          <div class="card-200">
+            <img src="img/chessnyckid.jpg" class="card-img-top" alt="Card image cap">
+          </div>
+          <div class="card-block">
+
+            <p>Greenpoint After School Program</p>
+              <p>PS 183: Head Start ChessTM (All Schools)</p>
+              <p>PS 183: Team Development (All Schools)</p>
+              <p>PS 183: Chess For Girls (All Schools)</p>
+              <p>Private Chess Coaching</p>
+              <p>Resurrection Ascension</p>
+            <a href="#" class="card-link">REGISTER</a>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">Fridays</h4>
+            <h6 class="card-subtitle text-muted">Greenpoint</h6>
+          </div>
+          <div class="card-200">
+            <img img src="img/camp2.jpg" class="card-img-top" alt="Card image cap">
+          </div>
+          <div class="card-block">
+            <p>Greenpoint After School Program</p>
+            <p>PS 199 Evening Chess l (Open Enrollment)</p>
+            <p>Chess NYC @ NYFACS</p>
+            <p>Private Chess Coaching</p>
+            <a href="#" class="card-link">REGISTER</a>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">Weekends</h4>
+            <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+          </div>
+          <div class="card-200">
+            <img img src="img/3-mommyPoppins.jpg" class="card-img-top"  alt="Card image cap">
+          </div>
+          <div class="card-block">
+
+            <p>Private Chess Coaching [SAT & SUN]</p>
+            <p>G & T Quads (1000 - 2100 USCF) [SAT]</p>
+            <p>Head Start Juniors [SUN]</p>
+            <p>Weekly Rated Meets [SUN]</p>
+            
+            <a href="#" class="card-link">REGISTER</a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
   </div>
 
 
@@ -324,62 +389,60 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
+</div>
 
 
 
 </div>  <!-- END #main div -->
 
 
-  
+<!--   SOCIAL FOOTER --> 
+  <section id="contact"></section>
+  <div id="sf">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 dg">
+          <h4 class="ml">FACEBOOK</h4>
+          <p class="centered"><a href="http://www.facebook.com/newyorkcitychess/" target="new"><i class="fa fa-facebook"></i></a></p>
+          <p class="ml">> Become A Friend</p>
+        </div>
+        <div class="col-lg-4 lg">
+          <h4 class="ml">TWITTER</h4>
+          <p class="centered"><a href="http://twitter.com/@chessnyc"><i class="fa fa-twitter"></i></a></p>
+          <p class="ml">> Follow Us</p>
+        </div>
+        <div class="col-lg-4 dg">
+          <h4 class="ml">GOOGLE +</h4>
+          <p class="centered"><a href="http://plus.google.com/s/chessnyc"><i class="fa fa-google-plus"></i></a></p>
+          <p class="ml">> Add Us To Your Circle</p>
+        </div>
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </div><!-- Social Footer -->
 
 
 
 
 
-    </div>
-</div>
+  <script>
+    
 
-
-<hr>
-
-
-<script type="text/javascript">
- //parallax scroll
-  var jumboHeight = $('.jumbotron').outerHeight();
-function parallax(){
-    var scrolled = $(window).scrollTop();
-    $('.bg').css('height', (jumboHeight-scrolled) + 'px');
-}
-
-$(window).scroll(function(e){
-    parallax();
-});
+  </script>
 
 
 
 
-$('.carousel').carousel({
-  interval: 2000
-})
 
-</script>   
+     <!-- Bootstrap core JavaScript
+     ================================================== -->
+     <!-- Placed at the end of the document so the pages load faster -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> <!-- scroll ease -->
+     <script src="js/main.js"></script>
+     <script src="js/bootstrap.js"></script>
 
- <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/lightbox.js"></script>
 
-</body>
-</html>
 
+ </body>
+
+ </html>
